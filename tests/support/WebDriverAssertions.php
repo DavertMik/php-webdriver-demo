@@ -1,7 +1,7 @@
 <?php
 trait WebDriverAssertions {
 
-    public function assertElementNotFound($by)
+    protected function assertElementNotFound($by)
     {
         try {
             $this->webDriver->findElement($by);

@@ -2,6 +2,7 @@
 class GitHubTest extends PHPUnit_Framework_TestCase {
 
     use WebDriverAssertions;
+    use WebDriverDevelop;
 
     protected $url = 'http://github.com';
     /**
@@ -55,7 +56,7 @@ class GitHubTest extends PHPUnit_Framework_TestCase {
 
         $this->assertElementNotFound(WebDriverBy::className('avatar'));
 
-//        $this->waitForUserInput();
+        // $this->waitForUserInput();
     }
 
 }
