@@ -9,7 +9,7 @@ trait WebDriverAssertions {
             $this->assertTrue(true);
             return;
         }
-        $this->fail("Element not found");
+        $this->fail("Unexpectedly element was found");
         
     }
     
