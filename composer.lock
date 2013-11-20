@@ -3,27 +3,27 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "3b0941ca7702f087881a3628168e89ac",
+    "hash": "9d76815ba546e6546bdeb6daff9beda8",
     "packages": [
 
     ],
     "packages-dev": [
         {
             "name": "facebook/webdriver",
-            "version": "v0.2.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facebook/php-webdriver.git",
-                "reference": "36bf555115da4cb03b131b4c04b681a75acd47d1"
+                "reference": "2aa16533196529ad025c83e63a58c30fb2b59c7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/36bf555115da4cb03b131b4c04b681a75acd47d1",
-                "reference": "36bf555115da4cb03b131b4c04b681a75acd47d1",
+                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/2aa16533196529ad025c83e63a58c30fb2b59c7b",
+                "reference": "2aa16533196529ad025c83e63a58c30fb2b59c7b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.4.20"
+                "php": ">=5.3.19"
             },
             "type": "library",
             "autoload": {
@@ -37,7 +37,7 @@
             ],
             "description": "A php client for WebDriver",
             "homepage": "https://github.com/facebook/php-webdriver",
-            "time": "2013-10-15 05:25:07"
+            "time": "2013-11-14 19:10:09"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -408,17 +408,17 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.3.6",
+            "version": "v2.3.7",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "6bb881b948368482e1abf1a75c08bcf88a1c5fc3"
+                "reference": "c1bda5b459d792cb253de12c65beba3040163b2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/6bb881b948368482e1abf1a75c08bcf88a1c5fc3",
-                "reference": "6bb881b948368482e1abf1a75c08bcf88a1c5fc3",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/c1bda5b459d792cb253de12c65beba3040163b2b",
+                "reference": "c1bda5b459d792cb253de12c65beba3040163b2b",
                 "shasum": ""
             },
             "require": {
@@ -451,16 +451,16 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-22 18:04:39"
+            "time": "2013-10-17 11:48:01"
         }
     ],
     "aliases": [
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "facebook/webdriver": 20
+    },
     "platform": [
 
     ],

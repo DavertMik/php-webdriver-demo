@@ -13,7 +13,8 @@ class GitHubTest extends PHPUnit_Framework_TestCase {
 	public function setUp()
     {
         $capabilities = array(\WebDriverCapabilityType::BROWSER_NAME => 'firefox');
-        $this->webDriver = new \RemoteWebDriver('http://localhost:4444/wd/hub', $capabilities);
+        $this->webDriver = RemoteWebDriver::create('http://localhost:4444/wd/hub', $capabilities);
+
     }
 
     public function tearDown()

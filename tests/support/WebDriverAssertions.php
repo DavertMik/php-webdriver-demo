@@ -3,14 +3,12 @@ trait WebDriverAssertions {
 
     protected function assertElementNotFound($by)
     {
-        try {
-            $this->webDriver->findElement($by);
-        } catch (\NoSuchElementWebDriverError $e) {
-            $this->assertTrue(true);
-            return;
+        $els = $this->webDriver->findElements($by);
+        if (count($els)) {
+            $this->fail("Unexpectedly element was found");
         }
-        $this->fail("Unexpectedly element was found");
-        
+        // increment assertion counter
+        $this->assertTrue(true);
     }
     
 }

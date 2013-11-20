@@ -1,6 +1,6 @@
 {
     "require-dev": {
         "phpunit/phpunit": "*",
-        "facebook/webdriver": "*"
+        "facebook/webdriver": "dev-master"
     }
 }
