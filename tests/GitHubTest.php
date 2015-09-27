@@ -19,7 +19,7 @@ class GitHubTest extends PHPUnit_Framework_TestCase {
 
     public function tearDown()
     {
-        $this->webDriver->close();
+        $this->webDriver->quit();
     }
 
     public function testGitHubHome()
