@@ -34,7 +34,7 @@ class GitHubTest extends PHPUnit_Framework_TestCase {
         $this->webDriver->get($this->url);
 
         // find search field by its id
-        $search = $this->webDriver->findElement(WebDriverBy::id('js-command-bar-field'));
+        $search = $this->webDriver->findElement(WebDriverBy::cssSelector('.js-site-search-focus'));
         $search->click();
 
         // typing into field
@@ -44,8 +44,8 @@ class GitHubTest extends PHPUnit_Framework_TestCase {
         $this->webDriver->getKeyboard()->pressKey(WebDriverKeys::ENTER);
 
         $firstResult = $this->webDriver->findElement(
-            // some CSS selectors can be very long:
-            WebDriverBy::cssSelector('li.public:nth-child(1) > h3:nth-child(3) > a:nth-child(1) > em:nth-child(2)')
+            // select link for php-webdriver
+            WebDriverBy::partialLinkText('facebook')
         );
 
         $firstResult->click();
@@ -55,7 +55,7 @@ class GitHubTest extends PHPUnit_Framework_TestCase {
 
         $this->assertEquals('https://github.com/facebook/php-webdriver', $this->webDriver->getCurrentURL());
 
-        $this->assertElementNotFound(WebDriverBy::className('avatar'));
+        $this->assertElementNotFound(WebDriverBy::className('name'));
 
         // $this->waitForUserInput();
     }
