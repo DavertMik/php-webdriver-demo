@@ -31,10 +31,10 @@ class GitHubTest extends PHPUnit_Framework_TestCase {
 
     public function testSearch()
     {
-        $this->webDriver->get($this->url);
+        $this->webDriver->get($this->url . '/search');
 
         // find search field by its id
-        $search = $this->webDriver->findElement(WebDriverBy::cssSelector('.js-site-search-focus'));
+        $search = $this->webDriver->findElement(WebDriverBy::cssSelector('.input-block'));
         $search->click();
 
         // typing into field
